@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travaux Pratiques</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0a0a0a, #121212);
+      color: white;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(13, 13, 13, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      animation: slideDown 0.5s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    header strong {
+      font-size: 1.2em;
+      color: #2e8bff;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background-color: rgba(46, 139, 255, 0.2);
+    }
+
+    main {
+      margin-top: 120px;
+      padding: 40px 20px 100px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 50px;
+      background: linear-gradient(135deg, #2e8bff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tp-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease forwards;
+  }
+
+    .tp-card {
+      background: rgba(30, 30, 30, 0.5);
+      border: 1px solid rgba(46, 139, 255, 0.2);
+      margin: 10px;
+      border-radius: 15px;
+      text-align: center;
+      padding: 30px 20px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tp-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      border-color: #2e8bff;
+      box-shadow: 0 15px 40px rgba(46, 139, 255, 0.3);
+    }
+
+    .tp-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    .tp-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .tp-card h3 {
+      color: #2e8bff;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .tp-card p {
+      color: #ccc;
+      font-size: 0.95em;
+      margin-bottom: 10px;
+    }
+
+    .tp-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      background: linear-gradient(135deg, #2e8bff, #00d4ff);
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .tp-card a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(46, 139, 255, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid rgba(46, 139, 255, 0.2);
+      margin-top: 80px;
+      animation: fadeIn 1s ease 0.8s backwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+
+      header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      main {
+        margin-top: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>CHARRAS Enzo</strong></div>
+    <nav>
+      <a href="index_fr.html">Accueil</a>
+      <a href="video.html">Présentation</a>
+      <a href="tp.html">Travaux Pratiques</a>
+      <a href="formation.html">La Formation</a>
+      <a href="tp_rotation1_en.html">
+        <img src="https://flagcdn.com/w20/gb.png">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Travaux Pratiques</h1>
+<div class="tp-grid">
+
+  <div class="tp-card">
+    <img src="../../image/R.png" alt="TP1 ordinateur">
+    <h3>TP1 - PC</h3>
+    <p>Démonter, monter un ordinateur</p>
+    <a href="../../download/r1/TP101.zip" download>Télécharger</a>
+  </div>
+
+  <div class="tp-card">
+    <img src="../../image/gimp.png" alt="TP2 GIMP">
+    <h3>TP2 - GIMP</h3>
+    <p>Retouche et création d’images</p>
+    <a href="../../download/r1/TP102.docx" download>Télécharger</a>
+  </div>
+
+  <div class="tp-card">
+    <img src="../../image/disque.png" alt="TP3 Disque dur">
+    <h3>TP3 - Disque dur</h3>
+    <p>Structure, partition et maintenance</p>
+    <a href="../../download/r1/TP103.zip" download>Télécharger</a>
+  </div>
+
+  <div class="tp-card">
+    <img src="../../image/clé.webp" alt="TP4 Réseau">
+    <h3>TP4 - clé wifi</h3>
+    <p>Configuration, drivers</p>
+    <a href="../../download/r1/TP104.zip" download>Télécharger</a>
+  </div>
+
+  <div class="tp-card">
+    <img src="../../image/écran.webp" alt="TP5 multi écran">
+    <h3>TP5 - écran</h3>
+    <p>Gérer plusieurs écran</p>
+    <a href="../../download/r1/TP105.zip" download>Télécharger</a>
+  </div>
+</div>
+  </main>
+
+  <footer>
+    <p>CHARRAS Enzo - 1<sup>er</sup>
+ CIEL</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Formation CIEL</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      padding: 15px 30px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    header strong { color: #2e8bff; font-size: 1.1em; }
+
+    nav { display: flex; gap: 20px; }
+    nav a {
+      color: white; text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+    nav a:hover { background: rgba(46,139,255,0.2); }
+
+    .animation { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    main {
+      margin-top: 100px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin-inline: auto;
+    }
+
+    h1 { font-size: 2.5em; text-align: center; margin-bottom: 20px; color: #2e8bff; }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #ccc;
+      font-size: 1.1em;
+    }
+
+    .box {
+      background: rgba(46,139,255,0.05);
+      border: 1px solid rgba(46,139,255,0.3);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    h2 { color: #2e8bff; margin-bottom: 15px; font-size: 1.8em; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: rgba(30,30,30,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(46,139,255,0.2);
+    }
+
+    .skill-card h3 { color: #2e8bff; margin-bottom: 10px; font-size: 1.2em; }
+    .skill-card ul { list-style: none; }
+    .skill-card li { color: #ccc; padding: 5px 0; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #888;
+      border-top: 1px solid rgba(46,139,255,0.2);
+      margin-top: 60px;
+      font-size: .9em;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; gap: 10px; }
+      nav { flex-direction: column; align-items: center; gap: 10px; }
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.4em; }
+      main { margin-top: 160px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><strong></strong></div>
+    <nav>
+      <a href="index_fr.html">Accueil</a>
+      <a href="video.html">Présentation</a>
+      <a href="tp.html">Travaux Pratiques</a>
+      <a href="formation.html">La formation</a>
+      <a href="formation_en.html">
+        <img src="https://flagcdn.com/w20/gb.png" alt="EN">
+      </a>
+    </nav>
+  </header>
+
+  <div class="animation">
+    <main>
+      <h1>La Formation CIEL</h1>
+
+      <p class="intro">
+        Cybersécurité, Informatique et Électronique, réseaux — Une formation complète
+        pour devenir un expert du numérique.
+      </p>
+
+      <section class="box">
+        <h2>🎓 Qu'est-ce que la formation CIEL ?</h2>
+        <p>
+          La formation CIEL forme des techniciens capables de concevoir, installer et
+          sécuriser des systèmes informatiques et des réseaux de communication. Les élèves
+          y apprennent à configurer du matériel, administrer des serveurs, développer des
+          applications et assurer la sécurité des données.
+        </p>
+      </section>
+
+      <section class="box">
+        <h2>🎯 Pourquoi choisir CIEL ?</h2>
+        <p>
+          Cette formation combine trois domaines essentiels : cybersécurité, informatique et
+          électronique. Elle garantit une polyvalence très recherchée et une excellente
+          employabilité dans les métiers du numérique.
+        </p>
+      </section>
+
+      <section>
+        <h2>💡 Compétences développées</h2>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3>🔒 Cybersécurité</h3>
+            <ul>
+              <li>Sécurisation des systèmes</li>
+              <li>Protection des données</li>
+              <li>Ethical hacking</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>💻 Informatique</h3>
+            <ul>
+              <li>Développement web</li>
+              <li>Programmation (Python, C, JS)</li>
+              <li>Bases de données SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>🌐 Réseaux</h3>
+            <ul>
+              <li>Configuration réseau</li>
+              <li>Protocoles TCP/IP</li>
+              <li>VPN et sécurité réseau</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>⚡ Électronique</h3>
+            <ul>
+              <li>Microcontrôleurs (Arduino)</li>
+              <li>Raspberry Pi</li>
+              <li>Projets IoT</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    1<sup>er</sup> CIEL
+  </footer>
+</body>
+</html>

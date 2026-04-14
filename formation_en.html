@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CIEL Training Program</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0; width: 100%;
+      padding: 15px 30px;
+      display: flex; justify-content: space-between; align-items: center;
+      background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    header strong { color: #2e8bff; font-size: 1.1em; }
+
+    nav { display: flex; gap: 20px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: .2s;
+    }
+    nav a:hover { background: rgba(46,139,255,.2); }
+
+    .animation { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    main {
+      margin-top: 100px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin-inline: auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e8bff;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #ccc;
+      font-size: 1.1em;
+    }
+
+    .box {
+      background: rgba(46,139,255,.05);
+      border: 1px solid rgba(46,139,255,.3);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    h2 { color: #2e8bff; margin-bottom: 15px; font-size: 1.8em; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: rgba(30,30,30,.5);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(46,139,255,.2);
+    }
+
+    .skill-card h3 {
+      color: #2e8bff;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .skill-card ul { list-style: none; }
+    .skill-card li { color: #ccc; padding: 5px 0; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #888;
+      border-top: 1px solid rgba(46,139,255,.2);
+      margin-top: 60px;
+      font-size: .9em;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; gap: 10px; }
+      nav { flex-direction: column; align-items: center; gap: 10px; }
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.4em; }
+      main { margin-top: 160px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><strong></strong></div>
+    <nav>
+      <a href="index_en.html">Home</a>
+      <a href="video_en.html">Presentation</a>
+      <a href="tp_en.html">Practical Work</a>
+      <a href="formation_en.html">Training Program</a>
+      <a href=" formation.html">
+        <img src="https://flagcdn.com/w20/fr.png" alt="FR">
+      </a>
+    </nav>
+  </header>
+
+  <div class="animation">
+    <main>
+
+      <h1>The CIEL Training Program</h1>
+
+      <p class="intro">
+        Cybersecurity, Computer Science and Electronics, Networks — A complete program
+        to become a digital technology specialist.
+      </p>
+
+      <section class="box">
+        <h2>🎓 What is the CIEL training program?</h2>
+        <p>
+          The CIEL program trains technicians capable of designing, installing and
+          securing IT systems and communication networks. Students learn hardware
+          configuration, server administration, application development and data security.
+        </p>
+      </section>
+
+      <section class="box">
+        <h2>🎯 Why choose CIEL?</h2 >
+        <p>
+          This program combines three essential fields: cybersecurity, computer science
+          and electronics. It ensures high versatility and excellent employability in
+          digital technology careers.
+        </p>
+      </section>
+
+      <section>
+        <h2>💡 Skills Developed</h2>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3>🔒 Cybersecurity</h3>
+            <ul>
+              <li>System security</li>
+              <li>Data protection</li>
+              <li>Ethical hacking</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>💻 Computer Science</h3>
+            <ul>
+              <li>Web development</li>
+              <li>Programming (Python, C, JS)</li>
+              <li>SQL databases</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>🌐 Networks</h3>
+            <ul>
+              <li>Network configuration</li>
+              <li>TCP/IP protocols</li>
+              <li>VPN and network security</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>⚡ Electronics</h3>
+            <ul>
+              <li>Microcontrollers (Arduino)</li>
+              <li>Raspberry Pi</li>
+              <li>IoT projects</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+     1<sup>st</sup> CIEL
+  </footer>
+</body>
+</html>
